@@ -4,7 +4,7 @@ from pymongo import MongoClient
 from pymongo.errors import PyMongoError
 
 # Рядок підключення з вашими даними MongoDB Atlas
-MONGO_URI = "mongodb+srv://danulo007_db_user:FSbSaNP4rzDg1ToR@cluster0.rsn6odn.mongodb.net/?retryWrites=true&w=majority"
+MONGO_URI = ""
 DB_NAME = "cat_database"
 COLLECTION_NAME = "cats"
 
@@ -93,7 +93,7 @@ def update_cat_age(name: str, new_age: int) -> None:
             print(f"\nНе вдалося оновити вік кота '{name}' (можливо, ім'я не знайдено або вік не змінився).")
     except PyMongoError as e:
         print(f"Помилка при оновленні віку: {e}")
-
+ongodb+srv://danulo007_db_user:FSbSaNP4rzDg1ToR@cluster0.rsn6odn.mongodb.net/?retryWrites=true&w=majorit
 
 def add_cat_feature(name: str, new_feature: str) -> None:
     """Додає нову характеристику до списку features кота за ім'ям."""
